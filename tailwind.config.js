@@ -1,5 +1,12 @@
 module.exports = {
-  theme: {},
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        Radio: ["Radio Canada", "sans-serif"],
+      },
+    },
+  },
   plugins: [],
   content: [
     `components/**/*.{vue,js}`,
