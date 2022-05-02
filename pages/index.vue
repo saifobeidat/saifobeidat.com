@@ -10,15 +10,52 @@
       </Section>
 
       <Section title="Technical Skills">
-        <div class="flex my-2">
-          <MyCircle label="HTML" class="mr-2">
+        <div class="flex flex-wrap my-2">
+          <MyCircle label="HTML" class="mr-2 mb-2">
             <img src="/skills/html.png" />
           </MyCircle>
-          <MyCircle label="CSS" class="mr-2">
+          <MyCircle label="CSS" class="mr-2 mb-2">
             <img src="/skills/css.png" />
           </MyCircle>
-          <MyCircle label="Javascript" class="mr-2">
+          <MyCircle label="Javascript" class="mr-2 mb-2">
             <img src="/skills/js.png" />
+          </MyCircle>
+          <MyCircle label="Vue" class="mr-2 mb-2">
+            <img src="/skills/vue.png" class="max-h-[40px]" />
+          </MyCircle>
+          <MyCircle label="Nuxt" class="mr-2 mb-2">
+            <img src="/skills/nuxt.png" class="max-h-[45px]" />
+          </MyCircle>
+          <MyCircle label="Quasar" class="mr-2 mb-2">
+            <img src="/skills/quasar.png" class="max-h-[45px]" />
+          </MyCircle>
+          <MyCircle label="Tailwind CSS" class="mr-2 mb-2">
+            <img src="/skills/tailwind.png" class="" />
+          </MyCircle>
+          <MyCircle label="Bootstrap" class="mr-2 mb-2">
+            <img src="/skills/bootstrap.png" class="" />
+          </MyCircle>
+          <MyCircle label="SASS" class="mr-2 mb-2">
+            <img src="/skills/sass.png" class="" />
+          </MyCircle>
+          <MyCircle label="Jquery" class="mr-2 mb-2">
+            <img src="/skills/jquery.png" class="max-h-[45px]" />
+          </MyCircle>
+
+          <MyCircle label="Umbraco CMS" class="mr-2 mb-2">
+            <img src="/skills/umbraco.png" class="max-h-[45px]" />
+          </MyCircle>
+          <MyCircle label="Photoshop" class="mr-2 mb-2">
+            <img src="/skills/ps.png" class="max-h-[45px]" />
+          </MyCircle>
+          <MyCircle label="Illustrator" class="mr-2 mb-2">
+            <img src="/skills/ai.png" class="max-h-[45px]" />
+          </MyCircle>
+          <MyCircle label="Adobe XD" class="mr-2 mb-2">
+            <img src="/skills/xd.png" class="max-h-[45px]" />
+          </MyCircle>
+          <MyCircle label="Git" class="mr-2 mb-2">
+            <img src="/skills/git.png" class="max-h-[45px]" />
           </MyCircle>
         </div>
 
