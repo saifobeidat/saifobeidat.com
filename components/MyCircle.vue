@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="inline-flex flex-col items-center">
     <div
-      class="flex items-center justify-center h-20 w-20 p-2 bg-white border-4 border-teal-500 rounded-full"
+      class="flex items-center justify-center h-20 w-20 p-2 bg-white border-[3px] border-teal-500 rounded-full overflow-hidden"
     >
       <slot></slot>
     </div>

@@ -69,6 +69,102 @@
       <Section title="Soft Skills">
         <LI v-for="(item, $index) in softSkills" :key="$index"> {{ item }} </LI>
       </Section>
+
+      <Section title="Experience">
+        <ExperienceItem
+          jobTitle="Frontend Developer"
+          companyName="Abwaab"
+          period="Aug 2020 - Present · 1 yr 10 mos"
+          location="Amman, Jordan"
+          class="mt-2"
+        >
+          <template slot="image">
+            <img src="/experience/abwaab.png" class="max-w-[40px]" />
+          </template>
+
+          <template slot="list">
+            <LI> Building PWA & SPA applications using Quasar framework</LI>
+            <LI> Building SSR applications using Nuxtjs Framework</LI>
+            <LI> Building complex features for Abwaab students </LI>
+            <LI>
+              Building a custom UI framework (reusable components) from scratch
+              for Abwaab platform
+            </LI>
+            <LI>
+              Adding documentation, guidelines & tips that help the team to be
+              consistent and always aligned
+            </LI>
+            <LI> Dealing with Restful & GraphQL APIs </LI>
+          </template>
+        </ExperienceItem>
+        <br />
+        <ExperienceItem
+          jobTitle="Frontend Developer"
+          companyName="Itmam"
+          period="Nov 2016 - May 2020 · 3 yrs 7 mos"
+          location="Amman, Jordan"
+          class="mt-2"
+        >
+          <template slot="image">
+            <img src="/experience/itmam.jpg" class="max-w-[40px]" />
+          </template>
+
+          <template slot="list">
+            <LI>
+              <div>
+                Developed more than 16 websites from scratch from SM to LG size
+                using HTML, CSS and JS
+              </div>
+              <div class="flex items-center mt-2">
+                <MyCircle class="mr-4">
+                  <img src="/experience/sts.png" />
+                </MyCircle>
+                <MyCircle class="mr-4">
+                  <img src="/experience/umniah.png" class="max-h-[60px]" />
+                </MyCircle>
+                <MyCircle class="mr-4">
+                  <img src="/experience/ayla.png" />
+                </MyCircle>
+                <MyCircle class="mr-4">
+                  <img src="/experience/ci.png" />
+                </MyCircle>
+                <MyCircle class="mr-4">
+                  <img src="/experience/apex.png" />
+                </MyCircle>
+                <MyCircle class="mr-4">
+                  <img src="/experience/emphnet.png" />
+                </MyCircle>
+              </div>
+            </LI>
+            <LI
+              >Integrated websites with with a .Net CMS called Umbraco & make
+              their content dynamic
+            </LI>
+            <LI>
+              I was responsible for giving training sessions to the clients in
+              Umbraco CMS
+            </LI>
+            <LI>
+              I was responsible in preparing web design job brief and UX
+              requirements
+            </LI>
+            <LI>
+              I was responsible in engaging with the customers receiving their
+              feedback, requirements and changes and transfer them to the team
+            </LI>
+            <LI
+              >I was responsible in preparing websites to be search engine
+              optimized
+            </LI>
+            <LI
+              >I acted as a bridge between the clients , UI/UX designer and the
+              development team</LI
+            >
+          </template>
+        </ExperienceItem>
+      </Section>
+
+      <br /><br />
     </div>
   </div>
 </template>
