@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-10">
-    <h1 class="text-xl font-semibold">
+  <div class="sm:mt-10 mt-4">
+    <h1 class="sm:text-2xl text-lg font-semibold">
       {{ title }}
     </h1>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white dark:bg-gray-900 dark:text-white">
-    <div class="max-w-5xl mx-auto">
+    <div class="sm:max-w-5xl px-4 mx-auto">
       <Header />
 
       <Section title="Qualifications Summary">
@@ -61,13 +61,27 @@
 
         <LI>
           <span> Expereinced in HMTL, CSS, Javascript </span>
-          <VTooltip class="inline-block">
-            <a><IconInfo /></a>
-            <template #popper> Info Here </template>
-          </VTooltip>
+          <InfoTooltip color="#eee">
+            <div class="text-slate-700">
+              <LI :addMargin="false">Worked on modern Javascript versions</LI>
+              <LI :addMargin="false"
+                >Worked on CSS3 and modern features like flex, grid
+              </LI>
+            </div>
+          </InfoTooltip>
         </LI>
         <LI> Expereinced in old-school frameworks like jQuery, Bootstrap </LI>
-        <LI>Expereinced in Vuejs and NuxtJs & Quasar frameworks </LI>
+        <LI>
+          <span> Expereinced in Vuejs and NuxtJs & Quasar frameworks </span>
+          <span>
+            <InfoTooltip color="#eee">
+              <div class="text-slate-700">
+                <LI :addMargin="false"></LI>
+                <LI :addMargin="false"> </LI>
+              </div>
+            </InfoTooltip>
+          </span>
+        </LI>
         <LI> Expereinced in Tailwind CSS, Bootstrap, SASS</LI>
         <LI> Developed internal UI framework (reusable components)</LI>
         <LI
@@ -101,6 +115,7 @@
           platforms</LI
         >
         <LI> Familiar with task runners like gulp</LI>
+        <LI> Familiar with Bitbucket Pipelines</LI>
       </Section>
 
       <Section title="Soft Skills">
@@ -121,7 +136,9 @@
 
           <template slot="list">
             <LI> Building PWA & SPA applications using Quasar framework</LI>
-            <LI> Building SSR applications using Nuxtjs Framework</LI>
+            <LI>
+              <span> Building SSR applications using Nuxtjs Framework </span>
+            </LI>
             <LI> Building complex features for Abwaab students </LI>
             <LI>
               Building a custom UI framework (reusable components) from scratch
@@ -152,24 +169,29 @@
                 Developed more than 16 websites from scratch from SM to LG size
                 using HTML, CSS and JS
               </div>
-              <div class="flex items-center mt-2">
-                <MyCircle class="mr-4">
+              <div class="flex flex-wrap items-center mt-2">
+                <MyCircle class="sm:mr-4 mr-2 mb-3">
                   <img src="/experience/sts.png" />
                 </MyCircle>
-                <MyCircle class="mr-4">
+                <MyCircle class="sm:mr-4 mr-2 mb-3">
                   <img src="/experience/umniah.png" class="max-h-[60px]" />
                 </MyCircle>
-                <MyCircle class="mr-4">
+                <MyCircle class="sm:mr-4 mr-2 mb-3">
                   <img src="/experience/ayla.png" />
                 </MyCircle>
-                <MyCircle class="mr-4">
+                <MyCircle class="sm:mr-4 mr-2 mb-3">
                   <img src="/experience/ci.png" />
                 </MyCircle>
-                <MyCircle class="mr-4">
+                <MyCircle class="sm:mr-4 mr-2 mb-3">
                   <img src="/experience/apex.png" />
                 </MyCircle>
-                <MyCircle class="mr-4">
+                <MyCircle class="sm:mr-4 mr-2 mb-3">
                   <img src="/experience/emphnet.png" />
+                </MyCircle>
+                <MyCircle
+                  class="sm:mr-4 mr-2 mb-3 text-2xl font-extrabold text-slate-600"
+                >
+                  +10
                 </MyCircle>
               </div>
             </LI>
@@ -207,11 +229,6 @@
 </template>
 
 <script>
-import Vue from "vue";
-import { Tooltip } from "floating-vue";
-Vue.component("VTooltip", Tooltip);
-import "floating-vue/dist/style.css";
-
 export default {
   name: "IndexPage",
   data() {
@@ -219,6 +236,8 @@ export default {
       qualificationsSummary: [
         "Bachelor's degree in Computer Information Systems from Jordan University of Science and Technology 2012 Sep - 2016 July",
         "Have developed more than 15 websites & web applications",
+        "5+ years of experience",
+        "",
       ],
 
       softSkills: [

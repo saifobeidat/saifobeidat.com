@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="mr-4">
+    <div class="sm:mr-4 mr-2">
       <slot name="image"></slot>
     </div>
     <div>

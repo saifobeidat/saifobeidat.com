@@ -1,20 +1,24 @@
 <template>
-  <div class="flex border-b border-slate-200 dark:border-slate-500 py-5">
-    <section class="flex w-1/2 items-center">
+  <div
+    class="flex flex-wrap border-b border-slate-200 dark:border-slate-500 py-5 relative"
+  >
+    <section class="flex sm:w-1/2 items-center">
       <div
-        class="h-28 w-28 mb-2 rounded-full overflow-hidden border-4 border-teal-400"
+        class="flex-shrink-0 sm:h-28 sm:w-28 h-20 w-20 mb-2 rounded-full overflow-hidden border-4 border-teal-400"
       >
         <img src="/saif.webp" alt="" />
       </div>
-      <div class="ml-4">
-        <h3 class="text-xl font-light leading-tight">Saif Aldeen Obeidat</h3>
-        <p class="text-3xl font-semibold">Frontend Developer</p>
+      <div class="sm:ml-4 ml-2">
+        <h3 class="sm:text-xl text-lg font-light leading-tight">
+          Saif Aldeen Obeidat
+        </h3>
+        <p class="sm:text-3xl text-xl font-semibold">Frontend Developer</p>
       </div>
     </section>
 
     <!-- Info -->
     <section
-      class="flex items-center w-1/2 border-l pl-4 border-slate-200 dark:border-slate-500"
+      class="flex items-center sm:w-1/2 sm:border-l sm:pl-4 border-slate-200 dark:border-slate-500"
     >
       <div>
         <div v-for="(infoItem, $index) in info" :key="$index">
