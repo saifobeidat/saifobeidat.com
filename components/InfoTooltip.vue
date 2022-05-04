@@ -14,7 +14,7 @@
       <div
         v-if="show"
         ref="box"
-        class="absolute rounded-lg p-4 z-50 w-[400px] overflow-hidden"
+        class="absolute rounded-lg p-4 z-50 sm:w-[450px] overflow-hidden"
         :style="`left:${boxLeft}px; right:${boxRight}; background-color:${color};`"
       >
         <slot> </slot>
@@ -65,7 +65,7 @@ export default {
         let iconPos = iconRef.getBoundingClientRect();
         this.arrowLeft = iconPos.left + 16;
         this.arrowTop = iconRef.offsetTop;
-        if (window.innerWidth > 600) {
+        if (window.innerWidth > 640) {
           this.boxLeft = iconPos.left - 20;
           this.boxRight = "auto";
         } else {

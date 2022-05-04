@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex items-start" :class="{ 'my-2': addMargin }">
+    <div class="flex items-start my-2">
       <div
         class="h-[6px] w-[6px] inline-block bg-teal-400 top-1.5 relative flex-shrink-0"
       ></div>
@@ -14,14 +14,7 @@
 </template>
 
 <script>
-export default {
-  props: {
-    addMargin: {
-      type: Boolean,
-      default: true,
-    },
-  },
-};
+export default {};
 </script>
 
 <style></style>

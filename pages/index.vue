@@ -63,10 +63,8 @@
           <span> Expereinced in HMTL, CSS, Javascript </span>
           <InfoTooltip color="#eee">
             <div class="text-slate-700">
-              <LI :addMargin="false">Worked on modern Javascript versions</LI>
-              <LI :addMargin="false"
-                >Worked on CSS3 and modern features like flex, grid
-              </LI>
+              <LI>Worked on modern Javascript versions</LI>
+              <LI>Worked on CSS3 and modern features like flex, grid </LI>
             </div>
           </InfoTooltip>
         </LI>
@@ -76,22 +74,29 @@
           <span>
             <InfoTooltip color="#eee">
               <div class="text-slate-700">
-                <LI :addMargin="false"></LI>
-                <LI :addMargin="false"> </LI>
+                <LI></LI>
+                <LI> </LI>
               </div>
             </InfoTooltip>
           </span>
         </LI>
+        <LI> Experienced in state managment stores like: Vuex</LI>
+        <LI>
+          Creating reusable, modular, scalable and performant code & well
+          architichitured applications</LI
+        >
         <LI> Expereinced in Tailwind CSS, Bootstrap, SASS</LI>
         <LI> Developed internal UI framework (reusable components)</LI>
         <LI
           >Building web applications with different modes such as PWA, SSR & SPA
         </LI>
         <LI
-          >Adding documentation, guidelines & tips for the code that help the
-          team to be consistent and always aligned
+          >Adding documentation, architictures, guidelines, code standards/style
+          guide
         </LI>
+        <LI>Performe code review, code refactoring, </LI>
         <LI> Dealing with Restful & GraphQL APIs</LI>
+        <LI> Dealing with WebSoket protocol</LI>
         <LI>
           Building dynamic content websites based on CMS's such as Umbraco
           (ASP.Net)</LI
@@ -135,9 +140,37 @@
           </template>
 
           <template slot="list">
+            <LI>
+              Working in Agile/SCRUM environment to work hand-in-hand with
+              product managers, designers, and developers to interpret and
+              implement their goals into a functional web app
+            </LI>
             <LI> Building PWA & SPA applications using Quasar framework</LI>
             <LI>
               <span> Building SSR applications using Nuxtjs Framework </span>
+              <span>
+                <InfoTooltip color="#eee">
+                  <div class="text-slate-700">
+                    <LI>
+                      Taking care of SEO by fetching data in the correct hook
+                    </LI>
+                    <LI>
+                      Taking care of the server load, as we don't want to
+                      overload the servers while the load can be put sometimes
+                      on the client browser
+                    </LI>
+
+                    <LI>
+                      Making sure that no memory leaks happen on the server and
+                      no shared state among guests happen
+                    </LI>
+                    <LI>
+                      Debugging & logging issues that happen on the server
+                    </LI>
+                    <LI> Fixing rendering hydration issues </LI>
+                  </div>
+                </InfoTooltip>
+              </span>
             </LI>
             <LI> Building complex features for Abwaab students </LI>
             <LI>
@@ -145,10 +178,11 @@
               for Abwaab platform
             </LI>
             <LI>
-              Adding documentation, guidelines & tips that help the team to be
+              Using confluence to add documentation, architicture, guidelines,
+              code standards & tips for the code that help the team to be
               consistent and always aligned
             </LI>
-            <LI> Dealing with Restful & GraphQL APIs </LI>
+            <LI> Reavmping & migrated projects to modern technologies </LI>
           </template>
         </ExperienceItem>
         <br />
@@ -237,7 +271,6 @@ export default {
         "Bachelor's degree in Computer Information Systems from Jordan University of Science and Technology 2012 Sep - 2016 July",
         "Have developed more than 15 websites & web applications",
         "5+ years of experience",
-        "",
       ],
 
       softSkills: [
