@@ -59,6 +59,7 @@
           </MyCircle>
         </div>
 
+        <h2 class="font-semibold text-sm text-slate-700 mt-3">Core:</h2>
         <LI>
           <span> Expereinced in HMTL, CSS, Javascript </span>
         </LI>
@@ -69,37 +70,34 @@
         <LI> Experienced in state managment stores like: Vuex</LI>
         <LI>
           Creating reusable, modular, scalable and performant code & well
-          architichitured applications</LI
-        >
+          architectured applications
+        </LI>
         <LI> Expereinced in TailwindCSS, Bootstrap, SASS</LI>
         <LI> Developed internal UI framework (reusable components)</LI>
         <LI
           >Building web applications with different modes such as PWA, SSR & SPA
         </LI>
-        <LI
-          >Adding documentation, architictures, guidelines, code standards/style
-          guide
-        </LI>
-        <LI>Performe code review, code refactoring, </LI>
+
         <LI> Dealing with Restful & GraphQL APIs</LI>
         <LI> Dealing with WebSoket protocol</LI>
         <LI>
           Building dynamic content websites based on CMS's such as Umbraco
-          (ASP.Net)</LI
-        >
+          (ASP.Net)
+        </LI>
+
+        <h2 class="font-semibold text-sm text-slate-700 mt-3">Secondary:</h2>
+        <LI>
+          Adding documentation, architictures, guidelines, code standards/style
+          guide
+        </LI>
+        <LI>Perform code reviews </LI>
+
         <LI> Optimizing websites' speed as per Google page speed standards</LI>
         <LI>
           Preparing Search engine optimized websites and as per Google web
-          mastering standards</LI
-        >
-        <LI>
-          Good player with Google tools such as Analytics, Search Console and
-          Tags manager</LI
-        >
-        <LI>
-          Customizing web designs using Photoshop, Illustrator, Adobe XD and
-          Figma</LI
-        >
+          mastering standards
+        </LI>
+
         <LI> Experienced in Git, GitHub & Bitbucket</LI>
         <LI>
           Website debugging and testing for cross browsers and cross
@@ -107,6 +105,16 @@
         >
         <LI> Familiar with task runners like gulp</LI>
         <LI> Familiar with Bitbucket Pipelines</LI>
+
+        <h2 class="font-semibold text-sm text-slate-700 mt-3">Extra:</h2>
+        <LI>
+          Good player with Google tools such as Analytics, Search Console and
+          Tags manager
+        </LI>
+        <LI>
+          Customizing web designs using Photoshop, Illustrator, Adobe XD and
+          Figma
+        </LI>
       </Section>
 
       <Section title="Soft Skills">
@@ -114,6 +122,7 @@
       </Section>
 
       <Section title="Experience">
+        <!-- Abwaab  -->
         <ExperienceItem
           jobTitle="Frontend Developer"
           companyName="Abwaab"
@@ -127,11 +136,17 @@
 
           <template slot="list">
             <LI>
+              Building the main Abwaab platform that targets 1 million students
+            </LI>
+            <LI>
               Working in Agile/SCRUM environment to work hand-in-hand with
               product managers, designers, and developers to interpret and
               implement their goals into a functional web app
             </LI>
-            <LI> Building PWA & SPA applications using Quasar framework</LI>
+            <LI>
+              Building Cross Platform applications PWA, SPA & Cordova using
+              Quasar framework</LI
+            >
             <LI>
               <span> Building SSR applications using Nuxtjs Framework </span>
               <span>
@@ -158,7 +173,9 @@
                 </InfoTooltip>
               </span>
             </LI>
-            <LI> Building complex features for Abwaab students </LI>
+            <LI>
+              Building complex & interactive features for Abwaab students
+            </LI>
             <LI>
               Building a custom UI framework (reusable components) from scratch
               for Abwaab platform
@@ -168,10 +185,12 @@
               code standards & tips for the code that help the team to be
               consistent and always aligned
             </LI>
-            <LI> Reavmping & migrated projects to modern technologies </LI>
+            <LI> Writing GraphQL queries with the help of apollo </LI>
+            <LI> 2 months of revamping the main platform project </LI>
           </template>
         </ExperienceItem>
         <br />
+        <!-- ITMAM  -->
         <ExperienceItem
           jobTitle="Frontend Developer"
           companyName="Itmam"
@@ -187,7 +206,8 @@
             <LI>
               <div>
                 Developed more than 16 websites from scratch from SM to LG size
-                using HTML, CSS and JS
+                using HTML, Vanilla CSS, Bootstrap, SASS, Javascript, JQuery and
+                Umbraco CMS
               </div>
               <div class="flex flex-wrap items-center mt-2">
                 <MyCircle class="sm:mr-4 mr-2 mb-3">
@@ -215,30 +235,24 @@
                 </MyCircle>
               </div>
             </LI>
-            <LI
-              >Integrated websites with with a .Net CMS called Umbraco & make
-              their content dynamic
+            <LI>
+              Build dynamic content websites with with Umbraco CMS based on
+              Asp.net
+            </LI>
+            <LI> Give training sessions to the clients in Umbraco CMS </LI>
+            <LI> Prepare web design job brief and UX requirements </LI>
+            <LI>
+              Engage with the customers receiving their feedback, requirements
+              and changes and transfer them to the team
+            </LI>
+            <LI>Prepare websites to be search engine optimized </LI>
+            <LI>
+              I acted as a bridge between the clients , UI/UX designer and the
+              development team
             </LI>
             <LI>
-              I was responsible for giving training sessions to the clients in
-              Umbraco CMS
+              Google Tag Manager implementations: setting up, debugging GTM tags
             </LI>
-            <LI>
-              I was responsible in preparing web design job brief and UX
-              requirements
-            </LI>
-            <LI>
-              I was responsible in engaging with the customers receiving their
-              feedback, requirements and changes and transfer them to the team
-            </LI>
-            <LI
-              >I was responsible in preparing websites to be search engine
-              optimized
-            </LI>
-            <LI
-              >I acted as a bridge between the clients , UI/UX designer and the
-              development team</LI
-            >
           </template>
         </ExperienceItem>
       </Section>
