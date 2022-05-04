@@ -1,9 +1,9 @@
 export const state = () => ({
-  isDrakMode: false,
+  isDarkMode: false,
 });
 
 export const mutations = {
   TOGGLE_DARK_MODE(state) {
-    state.isDrakMode = !state.isDrakMode;
+    state.isDarkMode = !state.isDarkMode;
   },
 };

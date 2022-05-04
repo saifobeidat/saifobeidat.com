@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ dark: isDrakMode }">
+  <div :class="{ dark: isDarkMode }">
     <Nuxt />
   </div>
 </template>
@@ -8,7 +8,7 @@
 import { mapState } from "vuex";
 export default {
   computed: {
-    ...mapState("general", ["isDrakMode"]),
+    ...mapState("general", ["isDarkMode"]),
   },
 };
 </script>

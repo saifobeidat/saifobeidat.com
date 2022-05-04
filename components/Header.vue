@@ -32,7 +32,7 @@
 
     <section class="absolute right-0">
       <button @click="toggleDarkMode">
-        <IconDark v-if="isDrakMode" />
+        <IconDark v-if="isDarkMode" />
         <IconLight v-else />
       </button>
     </section>
@@ -66,7 +66,7 @@ export default {
     };
   },
   computed: {
-    ...mapState("general", ["isDrakMode"]),
+    ...mapState("general", ["isDarkMode"]),
   },
   methods: {
     toggleDarkMode() {

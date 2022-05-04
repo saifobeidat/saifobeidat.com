@@ -36,10 +36,15 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   props: {
-    color: {
-      default: "#FFF",
+    lightColor: {
+      default: "#eee",
+      type: String,
+    },
+    darkColor: {
+      default: "#111",
       type: String,
     },
   },
@@ -50,6 +55,12 @@ export default {
       arrowLeft: 0,
       arrowTop: 0,
     };
+  },
+  computed: {
+    ...mapState("general", ["isDarkMode"]),
+    color() {
+      return this.isDarkMode ? this.darkColor : this.lightColor;
+    },
   },
   methods: {
     showInfoTooltip() {

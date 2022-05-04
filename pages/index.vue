@@ -61,31 +61,17 @@
 
         <LI>
           <span> Expereinced in HMTL, CSS, Javascript </span>
-          <InfoTooltip color="#eee">
-            <div class="text-slate-700">
-              <LI>Worked on modern Javascript versions</LI>
-              <LI>Worked on CSS3 and modern features like flex, grid </LI>
-            </div>
-          </InfoTooltip>
         </LI>
         <LI> Expereinced in old-school frameworks like jQuery, Bootstrap </LI>
         <LI>
           <span> Expereinced in Vuejs and NuxtJs & Quasar frameworks </span>
-          <span>
-            <InfoTooltip color="#eee">
-              <div class="text-slate-700">
-                <LI></LI>
-                <LI> </LI>
-              </div>
-            </InfoTooltip>
-          </span>
         </LI>
         <LI> Experienced in state managment stores like: Vuex</LI>
         <LI>
           Creating reusable, modular, scalable and performant code & well
           architichitured applications</LI
         >
-        <LI> Expereinced in Tailwind CSS, Bootstrap, SASS</LI>
+        <LI> Expereinced in TailwindCSS, Bootstrap, SASS</LI>
         <LI> Developed internal UI framework (reusable components)</LI>
         <LI
           >Building web applications with different modes such as PWA, SSR & SPA
@@ -149,7 +135,7 @@
             <LI>
               <span> Building SSR applications using Nuxtjs Framework </span>
               <span>
-                <InfoTooltip color="#eee">
+                <InfoTooltip>
                   <div class="text-slate-700">
                     <LI>
                       Taking care of SEO by fetching data in the correct hook
