@@ -59,14 +59,14 @@
           </MyCircle>
         </div>
 
-        <h2 class="font-semibold text-sm text-slate-700 mt-3">Core:</h2>
-        <LI>
-          <span> Expereinced in HMTL, CSS, Javascript </span>
-        </LI>
+        <h2
+          class="font-semibold text-sm text-slate-700 dark:text-slate-100 mt-3"
+        >
+          Core:
+        </h2>
+        <LI> Expereinced in HMTL, CSS, Javascript </LI>
         <LI> Expereinced in old-school frameworks like jQuery, Bootstrap </LI>
-        <LI>
-          <span> Expereinced in Vuejs and NuxtJs & Quasar frameworks </span>
-        </LI>
+        <LI> Expereinced in Vuejs and NuxtJs & Quasar frameworks </LI>
         <LI> Experienced in state managment stores like: Vuex</LI>
         <LI>
           Creating reusable, modular, scalable and performant code & well
@@ -85,17 +85,22 @@
           (ASP.Net)
         </LI>
 
-        <h2 class="font-semibold text-sm text-slate-700 mt-3">Secondary:</h2>
+        <h2
+          class="font-semibold text-sm text-slate-700 dark:text-slate-100 mt-3"
+        >
+          Secondary:
+        </h2>
         <LI>
           Adding documentation, architictures, guidelines, code standards/style
           guide
         </LI>
         <LI>Perform code reviews </LI>
 
-        <LI> Optimizing websites' speed as per Google page speed standards</LI>
         <LI>
-          Preparing Search engine optimized websites and as per Google web
-          mastering standards
+          Optimze websites performance as per Google page speed standards</LI
+        >
+        <LI>
+          Optimze websites for SEO purposes and apply SEO stratigies & tactics
         </LI>
 
         <LI> Experienced in Git, GitHub & Bitbucket</LI>
@@ -106,7 +111,11 @@
         <LI> Familiar with task runners like gulp</LI>
         <LI> Familiar with Bitbucket Pipelines</LI>
 
-        <h2 class="font-semibold text-sm text-slate-700 mt-3">Extra:</h2>
+        <h2
+          class="font-semibold text-sm text-slate-700 dark:text-slate-100 mt-3"
+        >
+          Extra:
+        </h2>
         <LI>
           Good player with Google tools such as Analytics, Search Console and
           Tags manager
@@ -186,7 +195,10 @@
               consistent and always aligned
             </LI>
             <LI> Writing GraphQL queries with the help of apollo </LI>
-            <LI> 2 months of revamping the main platform project </LI>
+            <LI>
+              2 months of revamping thousands of lines of code of the main
+              platform project
+            </LI>
           </template>
         </ExperienceItem>
         <br />
