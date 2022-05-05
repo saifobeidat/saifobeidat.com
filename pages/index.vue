@@ -73,7 +73,9 @@
           architectured applications
         </LI>
         <LI> Expereinced in TailwindCSS, Bootstrap, SASS</LI>
-        <LI> Developed internal UI framework (reusable components)</LI>
+        <LI>
+          Developed internal UI framework (reusable components & plugins)</LI
+        >
         <LI
           >Building web applications with different modes such as PWA, SSR & SPA
         </LI>
@@ -282,7 +284,7 @@ export default {
       qualificationsSummary: [
         "Bachelor's degree in Computer Information Systems from Jordan University of Science and Technology 2012 Sep - 2016 July",
         "Have developed more than 15 websites & web applications",
-        "5+ years of experience",
+        "5+ years of experience of frontend development",
       ],
 
       softSkills: [
