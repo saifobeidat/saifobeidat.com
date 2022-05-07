@@ -74,8 +74,8 @@
         </LI>
         <LI> Expereinced in TailwindCSS, Bootstrap, SASS</LI>
         <LI>
-          Developed internal UI framework (reusable components & plugins)</LI
-        >
+          Able to build internal UI framework (reusable components & plugins)
+        </LI>
         <LI
           >Building web applications with different modes such as PWA, SSR & SPA
         </LI>
@@ -105,13 +105,15 @@
           Optimze websites for SEO purposes and apply SEO stratigies & tactics
         </LI>
 
+        <LI> Optimze websites to be accessable </LI>
+
         <LI> Experienced in Git, GitHub & Bitbucket</LI>
         <LI>
           Website debugging and testing for cross browsers and cross
           platforms</LI
         >
         <LI> Familiar with task runners like gulp</LI>
-        <LI> Familiar with Bitbucket Pipelines</LI>
+        <LI> Working knowledge of CI/CD pipelines</LI>
 
         <h2
           class="font-semibold text-sm text-slate-700 dark:text-slate-100 mt-3"
@@ -125,6 +127,10 @@
         <LI>
           Customizing web designs using Photoshop, Illustrator, Adobe XD and
           Figma
+        </LI>
+        <LI>
+          Experience with Atlassian products [JIRA, Confluence, Trello,
+          BitBucket]
         </LI>
       </Section>
 
@@ -291,7 +297,7 @@ export default {
         "Able to learn new technologies that serve the company's work",
         "Able to switch between projects as per needed",
         "Understand projects deadlines and the criticality of the delivery delay",
-        "Good communication with the UI/UX designers, scrums masters & product managers",
+        "Working experience with the Agile/Scrum Development process",
       ],
     };
   },

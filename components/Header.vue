@@ -30,7 +30,7 @@
         <div class="flex items-center">
           <label class="text-[15px] pr-1"> Links: </label>
           <span
-            class="mr-1 font-light text-sm text-slate-700 dark:text-slate-300"
+            class="mr-2 font-light text-sm text-slate-700 dark:text-slate-300"
           >
             <a href="https://www.linkedin.com/in/saif-obeidat/" target="_blank">
               <IconLinkedin class="text-[#0a66c2] bg-white w-4 h-4" />
