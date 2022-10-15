@@ -64,15 +64,15 @@
         >
           Core:
         </h2>
-        <LI> Expereinced in HMTL, CSS, Javascript </LI>
-        <LI> Expereinced in old-school frameworks like jQuery, Bootstrap </LI>
-        <LI> Expereinced in Vuejs and NuxtJs & Quasar frameworks </LI>
-        <LI> Experienced in state managment stores like: Vuex</LI>
+        <LI> Experienced in HTML, CSS, Javascript </LI>
+        <LI> Experienced in old-school frameworks like jQuery, Bootstrap </LI>
+        <LI> Experienced in Vuejs and NuxtJs & Quasar frameworks </LI>
+        <LI> Experienced in state management stores like: Vuex</LI>
         <LI>
           Creating reusable, modular, scalable and performant code & well
-          architectured applications
+          architected applications
         </LI>
-        <LI> Expereinced in TailwindCSS, Bootstrap, SASS</LI>
+        <LI> Experienced in TailwindCSS, Bootstrap, SASS</LI>
         <LI>
           Able to build internal UI framework (reusable components & plugins)
         </LI>
@@ -93,19 +93,19 @@
           Secondary:
         </h2>
         <LI>
-          Adding documentation, architictures, guidelines, code standards/style
+          Adding documentation, architectures, guidelines, code standards/style
           guide
         </LI>
         <LI>Perform code reviews </LI>
 
         <LI>
-          Optimze websites performance as per Google page speed standards</LI
+          Optimize websites performance as per Google page speed standards</LI
         >
         <LI>
-          Optimze websites for SEO purposes and apply SEO stratigies & tactics
+          Optimize websites for SEO purposes and apply SEO strategies & tactics
         </LI>
 
-        <LI> Optimze websites to be accessable </LI>
+        <LI> Optimize websites to be accessible </LI>
 
         <LI> Experienced in Git, GitHub & Bitbucket</LI>
         <LI>
@@ -139,11 +139,37 @@
       </Section>
 
       <Section title="Experience">
+        <!-- Sr. Abwaab  -->
+        <ExperienceItem
+          jobTitle="Sr. Frontend Developer"
+          companyName="Abwaab"
+          period="Jul 2022 - Present · 4 mos"
+          location="Amman, Jordan"
+          class="mt-2"
+        >
+          <template slot="image">
+            <img src="/experience/abwaab.png" class="max-w-[40px]" />
+          </template>
+
+          <template slot="list">
+            <LI> Building complex features</LI>
+            <LI> Monitoring juniors </LI>
+            <LI> Conducting interviews with candidates </LI>
+            <LI> Leading internal projects</LI>
+            <LI> Apply Code Reviews</LI>
+            <LI>
+              Using confluence to add documentation, architecture, guidelines,
+              code standards & tips for the code that help the team to be
+              consistent and always aligned
+            </LI>
+          </template>
+        </ExperienceItem>
+
         <!-- Abwaab  -->
         <ExperienceItem
           jobTitle="Frontend Developer"
           companyName="Abwaab"
-          period="Aug 2020 - Present · 1 yr 10 mos"
+          period="Aug 2020 - Jul 2022 . 2 yrs"
           location="Amman, Jordan"
           class="mt-2"
         >
@@ -166,29 +192,26 @@
             >
             <LI>
               <span> Building SSR applications using Nuxtjs Framework </span>
-              <span>
-                <InfoTooltip>
-                  <div class="text-slate-700">
-                    <LI>
-                      Taking care of SEO by fetching data in the correct hook
-                    </LI>
-                    <LI>
-                      Taking care of the server load, as we don't want to
-                      overload the servers while the load can be put sometimes
-                      on the client browser
-                    </LI>
 
-                    <LI>
-                      Making sure that no memory leaks happen on the server and
-                      no shared state among guests happen
-                    </LI>
-                    <LI>
-                      Debugging & logging issues that happen on the server
-                    </LI>
-                    <LI> Fixing rendering hydration issues </LI>
-                  </div>
-                </InfoTooltip>
-              </span>
+              <LI isSub
+                >Building nuxt plugins to save big time when using common
+                functionalities</LI
+              >
+              <LI isSub
+                >Taking care of SEO by fetching data in the correct hook</LI
+              >
+              <LI isSub
+                >Making sure that we don't run requests on Nuxt server if not
+                needed, instead we do it on the client browser</LI
+              >
+              <LI isSub
+                >Making sure that no memory leaks happen on the server and no
+                shared state among guests happen</LI
+              >
+              <LI isSub
+                >Debugging & logging issues that happen on Nuxt server</LI
+              >
+              <LI isSub>Fixing rendering hydration issues</LI>
             </LI>
             <LI>
               Building complex & interactive features for Abwaab students
@@ -197,15 +220,11 @@
               Building a custom UI framework (reusable components) from scratch
               for Abwaab platform
             </LI>
-            <LI>
-              Using confluence to add documentation, architicture, guidelines,
-              code standards & tips for the code that help the team to be
-              consistent and always aligned
-            </LI>
+
             <LI> Writing GraphQL queries with the help of apollo </LI>
             <LI>
-              2 months of revamping thousands of lines of code of the main
-              platform project
+              2 months of leading and revamping thousands of lines of code of
+              the main platform project
             </LI>
           </template>
         </ExperienceItem>
@@ -284,13 +303,13 @@
 
 <script>
 export default {
-  name: "IndexPage",
+  name: "",
   data() {
     return {
       qualificationsSummary: [
         "Bachelor's degree in Computer Information Systems from Jordan University of Science and Technology 2012 Sep - 2016 July",
         "Have developed more than 15 websites & web applications",
-        "5+ years of experience of frontend development",
+        "6+ years of experience of frontend development",
       ],
 
       softSkills: [

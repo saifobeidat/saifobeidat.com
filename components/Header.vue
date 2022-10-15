@@ -45,7 +45,7 @@
       </div>
     </section>
 
-    <section class="absolute right-0">
+    <section class="absolute right-0 print:hidden">
       <button @click="toggleDarkMode">
         <IconDark v-if="isDarkMode" />
         <IconLight v-else />
