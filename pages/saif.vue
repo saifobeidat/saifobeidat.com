@@ -313,7 +313,12 @@
           <template slot="list">
             <LI>Built personal projects using NuxtJs (SSG Mode)</LI>
             <LI>
-              <span>SEO Consultant for jointhespree website </span>
+              <span>SEO assistant for jointhespree website </span>
+              <LI isDescription>
+                keyword tracking and reporting, search console analysis,
+                competitor analysis, content optimization, metadata analysis,
+                etc..
+              </LI>
               <!-- <LI isSub>
                 Prepared a report for the whole website areas that can be
                 enhanced technically or by fixing the content</LI
@@ -323,7 +328,13 @@
                 Console
               </LI> -->
             </LI>
-            <LI>Performance consultant for the jointhespree website </LI>
+            <LI>
+              <span>Performance assistant for the jointhespree website</span>
+              <LI isDescription>
+                I was responsible to prepare a full technical report that will
+                list all the technical performance issues and how to fix them
+              </LI>
+            </LI>
           </template>
         </ExperienceItem>
       </Section>
