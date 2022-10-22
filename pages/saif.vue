@@ -77,7 +77,8 @@
           Able to build internal UI framework (reusable components & plugins)
         </LI>
         <LI
-          >Building web applications with different modes such as PWA, SSR & SPA
+          >Building web applications with different modes such as PWA, SSR, SSG
+          & SPA
         </LI>
 
         <LI> Dealing with Restful & GraphQL APIs</LI>
@@ -292,6 +293,37 @@
             <LI>
               Google Tag Manager implementations: setting up, debugging GTM tags
             </LI>
+          </template>
+        </ExperienceItem>
+
+        <br />
+
+        <!-- Saif Obeidat  -->
+        <ExperienceItem
+          jobTitle="Saif Obeidat / Personal"
+          companyName=""
+          period=""
+          location=""
+          class="mt-2"
+        >
+          <template slot="image">
+            <img src="/saif_circle.png" class="max-w-[40px]" />
+          </template>
+
+          <template slot="list">
+            <LI>Built personal projects using NuxtJs (SSG Mode)</LI>
+            <LI>
+              <span>SEO Consultant for jointhespree website </span>
+              <!-- <LI isSub>
+                Prepared a report for the whole website areas that can be
+                enhanced technically or by fixing the content</LI
+              >
+              <LI isSub>
+                Analyzed the search performance of the website on Google Search
+                Console
+              </LI> -->
+            </LI>
+            <LI>Performance consultant for the jointhespree website </LI>
           </template>
         </ExperienceItem>
       </Section>
