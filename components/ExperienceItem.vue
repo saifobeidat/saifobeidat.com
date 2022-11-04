@@ -4,7 +4,7 @@
       <slot name="image"></slot>
     </div>
     <div>
-      <h2>{{ jobTitle }}</h2>
+      <h2 class="font-medium">{{ jobTitle }}</h2>
       <div class="text-sm">
         <p class="text-slate-900 dark:text-slate-100">
           {{ companyName }}

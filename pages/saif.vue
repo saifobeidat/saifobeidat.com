@@ -66,8 +66,84 @@
         </h2>
         <LI> Experienced in HTML, CSS, Javascript </LI>
         <LI> Experienced in old-school frameworks like jQuery, Bootstrap </LI>
-        <LI> Experienced in Vuejs and NuxtJs & Quasar frameworks </LI>
-        <LI> Experienced in state management stores like: Vuex</LI>
+        <LI>
+          <span>Experienced in Vuejs and NuxtJs & Quasar frameworks</span>
+          <LI isSub>Experienced in state management stores like: Vuex </LI>
+          <LI isSub
+            >Building web applications with different modes such as
+            <code class="highlight">PWA, SSR, SSG & SPA</code>
+          </LI>
+          <!-- <LI isDescription>
+            <div class="flex">
+              <NestedSkill
+                name="Composition API and Composables"
+                image="/frameworks_skills/composition.png"
+              />
+              <NestedSkill
+                name="Plugins and middlewares"
+                image="/frameworks_skills/middleware_plugins.png"
+              />
+              <NestedSkill
+                name="State Management (Vuex)"
+                image="/frameworks_skills/vuex.png"
+              />
+              <NestedSkill
+                name="Architecture for large projects"
+                image="/frameworks_skills/arch.png"
+              />
+
+              <NestedSkill
+                name="3rd party Modules Integration"
+                image="/frameworks_skills/modules.png"
+              />
+              <NestedSkill
+                name="Performance Optimization"
+                image="/frameworks_skills/performance.png"
+              />
+
+              <NestedSkill
+                name="Filed-based routing"
+                image="/frameworks_skills/file.png"
+              />
+              <NestedSkill
+                name="Reusable Components"
+                image="/frameworks_skills/reusable.png"
+              />
+            </div>
+
+            <div class="flex">
+              <NestedSkill
+                name="Async and Isomorphic Data"
+                image="/frameworks_skills/async.png"
+              />
+              <NestedSkill
+                name="SEO Optimization"
+                image="/frameworks_skills/seo.png"
+              />
+
+              <NestedSkill
+                name="Errors handling"
+                image="/frameworks_skills/error.png"
+              />
+              <NestedSkill
+                name="Static Site Generation (SSG)"
+                image="/frameworks_skills/ssg.png"
+              />
+              <NestedSkill
+                name="Server Side Rendering (SSR)"
+                image="/frameworks_skills/ssr.png"
+              />
+              <NestedSkill
+                name="Single Page App (SPA)"
+                image="/frameworks_skills/spa.png"
+              />
+              <NestedSkill
+                name="Progressive Web App (PWA)"
+                image="/frameworks_skills/pwa.png"
+              />
+            </div>
+          </LI> -->
+        </LI>
         <LI>
           Creating reusable, modular, scalable and performant code & well
           architected applications
@@ -75,10 +151,6 @@
         <LI> Experienced in TailwindCSS, Bootstrap, SASS</LI>
         <LI>
           Able to build internal UI framework (reusable components & plugins)
-        </LI>
-        <LI
-          >Building web applications with different modes such as PWA, SSR, SSG
-          & SPA
         </LI>
 
         <LI> Dealing with Restful & GraphQL APIs</LI>
@@ -188,8 +260,8 @@
               implement their goals into a functional web app
             </LI>
             <LI>
-              Building Cross Platform applications PWA, SPA & Cordova using
-              Quasar framework</LI
+              Building Cross Platform applications PWA, SPA & Mobile App
+              (Cordova) using Quasar framework</LI
             >
             <LI>
               <span> Building SSR applications using Nuxtjs Framework </span>
@@ -276,18 +348,26 @@
               </div>
             </LI>
             <LI>
-              Build dynamic content websites with with Umbraco CMS based on
+              Built dynamic content websites with with Umbraco CMS based on
               Asp.net
             </LI>
-            <LI> Give training sessions to the clients in Umbraco CMS </LI>
-            <LI> Prepare web design job brief and UX requirements </LI>
             <LI>
-              Engage with the customers receiving their feedback, requirements
-              and changes and transfer them to the team
+              I was responsible in giving training sessions to the clients in
+              Umbraco CMS
             </LI>
-            <LI>Prepare websites to be search engine optimized </LI>
             <LI>
-              I acted as a bridge between the clients , UI/UX designer and the
+              I was responsible in prepare web design job brief and UX
+              requirements
+            </LI>
+            <LI>
+              Engaged with the customers by receiving their feedback,
+              requirements and transfer them to the development team
+            </LI>
+            <LI
+              >Prepared the websites to be ready SEO (search engine optimized)
+            </LI>
+            <LI>
+              Acted as a bridge between the clients , UI/UX designer and the
               development team
             </LI>
             <LI>
@@ -351,11 +431,12 @@ export default {
     return {
       qualificationsSummary: [
         "Bachelor's degree in Computer Information Systems from Jordan University of Science and Technology 2012 Sep - 2016 July",
-        "Have developed more than 15 websites & web applications",
+        "Have developed more than 17 websites & web applications",
         "6+ years of experience of frontend development",
       ],
 
       softSkills: [
+        "Monitoring juniors",
         "Able to learn new technologies that serve the company's work",
         "Able to switch between projects as per needed",
         "Understand projects deadlines and the criticality of the delivery delay",

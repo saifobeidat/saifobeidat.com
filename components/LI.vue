@@ -11,13 +11,13 @@
         "
       ></div>
       <div
-        class="dark:text-slate-200 ml-2"
+        class="dark:text-slate-200"
         :class="
           isDescription
             ? 'text-xs text-slate-500'
             : isSub
-            ? 'text-xs text-slate-500'
-            : 'sm:text-sm text-[13px] text-slate-600'
+            ? 'text-xs text-slate-500 ml-2'
+            : 'sm:text-sm text-[13px] text-slate-600 ml-2'
         "
       >
         <slot></slot>
