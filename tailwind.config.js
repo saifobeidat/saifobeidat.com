@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -7,7 +7,11 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("initial", "html :where(&)");
+    },
+  ],
   content: [
     `components/**/*.{vue,js}`,
     `layouts/**/*.vue`,
@@ -15,6 +19,6 @@ module.exports = {
     `composables/**/*.{js,ts}`,
     `plugins/**/*.{js,ts}`,
     `App.{js,ts,vue}`,
-    `app.{js,ts,vue}`
-  ]
-}
+    `app.{js,ts,vue}`,
+  ],
+};

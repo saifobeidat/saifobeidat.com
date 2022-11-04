@@ -1,6 +1,6 @@
 <template>
   <div class="sm:mt-10 mt-4">
-    <h1 class="sm:text-2xl text-lg font-semibold">
+    <h1 class="sm:text-2xl text-lg font-semibold mb-2">
       {{ title }}
     </h1>
 

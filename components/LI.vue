@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <div class="flex items-start my-2">
+  <div class="initial:mb-1.5">
+    <div class="flex items-start">
       <div
         v-if="!isDescription"
         class="square inline-block top-1.5 relative flex-shrink-0"
         :class="
           isSub
             ? 'h-1 w-1 bg-slate-400 rounded-full'
-            : 'h-[6px] w-[6px] bg-teal-400'
+            : 'h-[5px] w-[5px] bg-teal-400 rounded-full'
         "
       ></div>
       <div
@@ -17,7 +17,7 @@
             ? 'text-xs text-slate-500'
             : isSub
             ? 'text-xs text-slate-500 ml-2'
-            : 'sm:text-sm text-[13px] text-slate-600 ml-2'
+            : 'text-[13.5px] text-slate-600 ml-2'
         "
       >
         <slot></slot>
