@@ -90,7 +90,7 @@
           <div class="skills-block">
             <h2 class="block-title">Javascript frameworks & Libraries</h2>
             <LI>
-              <span>Vue, Nuxt, Quasar</span>
+              <span>Vue, Nuxt and Quasar</span>
               <div class="mt-1">
                 <LI isSub>
                   Experienced in state management stores like: Vuex
@@ -98,8 +98,8 @@
 
                 <LI isSub>
                   Building web applications with different modes such as PWA,
-                  <a class="text-blue-500 underline" href="#ssr_section">SSR</a
-                  >, SSG & SPA
+                  <a class="text-blue-500 underline" href="#abwaab_mid">SSR</a>,
+                  SSG & SPA
                 </LI>
                 <LI isSub class="mb-0">
                   Able to build reusable components that expose simple and
@@ -165,8 +165,11 @@
               >Adding documentation, architectures, guidelines, code
               standards/style guide
             </LI>
-            <LI class="mb-0">Perform code reviews</LI>
-            <LI class="mb-0">Leading internal frontend projects</LI>
+            <LI class="mb-0">Perform code reviews & production deployments</LI>
+            <LI class="mb-0"
+              ><a class="text-blue-500 underline" href="#abwaab_mid">Leading</a>
+              internal frontend projects</LI
+            >
             <LI class="mb-0">Monitoring juniors and onbording them</LI>
           </div>
 
@@ -226,6 +229,7 @@
           period="Aug 2020 - Jul 2022 . 2 yrs"
           location="Amman, Jordan"
           class="mt-2"
+          id="abwaab_mid"
         >
           <template slot="image">
             <img src="/experience/abwaab.png" class="max-w-[40px]" />
@@ -235,6 +239,11 @@
             <LI>
               Building the main Abwaab platform that targets 1 million students
             </LI>
+            <LI>
+              2 months of leading and revamping thousands of lines of code of
+              the main platform project
+            </LI>
+
             <LI>
               Working in Agile/SCRUM environment to work hand-in-hand with
               product managers, designers, and developers to interpret and
@@ -278,10 +287,6 @@
             </LI>
 
             <LI> Writing GraphQL queries with the help of apollo </LI>
-            <LI>
-              2 months of leading and revamping thousands of lines of code of
-              the main platform project
-            </LI>
           </template>
         </ExperienceItem>
         <br />
