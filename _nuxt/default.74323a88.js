@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper.c27b6911.js";import{l as s,E as o,k as r}from"./entry.34d9085c.js";const a={},c={class:"bg-slate-50"};function n(e,l){return r(),s("div",c,[o(e.$slots,"default")])}const d=t(a,[["render",n]]);export{d as default};
