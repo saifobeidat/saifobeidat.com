@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <Html >
+    <Html>
       <Head>
         <Meta
           property="viewport"
@@ -8,9 +8,7 @@
         />
       </Head>
 
-      <Body>
-       
-
+      <Body :class="{ dark: isDarkMode }">
         <NuxtPage />
       </Body>
     </Html>
@@ -18,7 +16,6 @@
 </template>
 
 <script lang="ts" setup>
-
 useHead({
   title: "Saif new",
   meta: [{ name: "description", content: "This is Saif Obeidat" }],
@@ -39,4 +36,9 @@ useHead({
   ]
 });
 
+let generalStore = useGeneralStore();
+
+let isDarkMode = computed(() => {
+  return generalStore.isDarkMode;
+});
 </script>
