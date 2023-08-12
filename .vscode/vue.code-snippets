@@ -1,0 +1,42 @@
+{
+  "Vue Option API": {
+    "prefix": "<template> Option API",
+    "body": [
+      "<template>",
+      "  <div>$1</div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "  data() {",
+      "    return {",
+      "      $2",
+      "    };",
+      "  }",
+      "};",
+      "</script>",
+      "",
+      "<style scoped>",
+      "</style>"
+    ],
+    "description": "Generates a basic Vue Single File Component (SFC) boilerplate."
+  },
+  "Vue Compistion API": {
+    "prefix": "<template> Compistion API",
+    "body": [
+      "<template>",
+      "  <div>",
+      "    $0",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup lang=\"ts\">",
+
+      "</script>",
+      "",
+      "<style scoped>",
+      "</style>"
+    ],
+    "description": "Create Vue Single File Component"
+  }
+}
