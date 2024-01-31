@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:mt-10 mt-4">
+  <div class="sm:mb-10 mb-4">
     <h1 class="sm:text-2xl text-lg font-semibold mb-2">
       {{ title }}
     </h1>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  props: ["title"],
+  props: ["title"]
 };
 </script>
 
