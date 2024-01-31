@@ -29,6 +29,9 @@
           <MyCircle label="Quasar" class="mr-2 mb-2">
             <img src="/skills/quasar.png" class="max-h-[45px]" />
           </MyCircle>
+          <MyCircle label="TypeScript" class="mr-2 mb-2">
+            <img src="/skills/typescript.png" class="max-h-[45px]" />
+          </MyCircle>
           <MyCircle label="Tailwind CSS" class="mr-2 mb-2">
             <img src="/skills/tailwind.png" class="" />
           </MyCircle>
@@ -56,6 +59,9 @@
           </MyCircle>
           <MyCircle label="Git" class="mr-2 mb-2">
             <img src="/skills/git.png" class="max-h-[45px]" />
+          </MyCircle>
+          <MyCircle label="GitHub" class="mr-2 mb-2">
+            <img src="/skills/github.png" class="max-h-[45px]" />
           </MyCircle>
         </div>
 
@@ -93,7 +99,11 @@
               <span>Vue, Nuxt and Quasar</span>
               <div class="mt-1">
                 <LI isSub>
-                  Experienced in state management stores like: Vuex
+                  Able to build complex features using composition API or option
+                  API fully TypedScript
+                </LI>
+                <LI isSub>
+                  Experienced in state management stores like: Pinia, Vuex
                 </LI>
 
                 <LI isSub>
@@ -101,9 +111,13 @@
                   <a class="text-blue-500 underline" href="#abwaab_mid">SSR</a>,
                   SSG & SPA
                 </LI>
-                <LI isSub class="mb-0">
-                  Able to build reusable components that expose simple and
+                <LI isSub>
+                  Able to build reusable UI components that expose simple and
                   friendly APIs
+                </LI>
+                <LI isSub class="mb-0">
+                  Experienced in building SSR apps using Nuxt that are SEO ready
+                  and server safe
                 </LI>
               </div>
             </LI>
@@ -210,14 +224,17 @@
 
           <template #list>
             <LI> Building complex features</LI>
-            <LI> Monitoring juniors </LI>
-            <LI> Conducting interviews with candidates </LI>
-            <LI> Leading internal projects</LI>
+            <LI> Supervised and onboarded junior team members</LI>
+            <LI> Conducted interviews with candidates</LI>
+            <LI> Led and planned internal projects</LI>
             <LI> Apply Code Reviews</LI>
             <LI>
-              Using confluence to add documentation, architecture, guidelines,
-              code standards & tips for the code that help the team to be
-              consistent and always aligned
+              Led a critical upgrade for abwaab.com from Nuxt2 to Nuxt3
+              (converted it to Vue3, Composition API, Typescript and Pinia)</LI
+            >
+            <LI>
+              Authored Nuxt3 guidelines documents (quality of code, best
+              practices, how to avoid memoy leaks on server,etc.)
             </LI>
           </template>
         </ExperienceItem>
@@ -431,7 +448,7 @@ let softSkills = [
 <style scoped>
 .blocks {
   flex-direction: column;
-  max-height: 700px;
+  max-height: 750px;
 }
 .skills-block {
   padding: 8px 10px;
