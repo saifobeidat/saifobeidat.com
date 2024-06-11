@@ -11,5 +11,11 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {}
     }
+  },
+  content: {
+    highlight: {
+      // Theme used in all color schemes.
+      theme: "github-light"
+    }
   }
 });
