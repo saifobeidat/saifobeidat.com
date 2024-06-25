@@ -10,7 +10,9 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
+    "@iconify-json/mdi": "^1.1.67",
     "@nuxt/devtools": "latest",
+    "@nuxt/icon": "^1.0.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^18.17.3",
     "nuxt": "^3.10.0"

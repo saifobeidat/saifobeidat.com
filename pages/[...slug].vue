@@ -1,9 +1,49 @@
 <template>
-  <!-- prose-code:rounded prose-code:font-light prose-code:py-0.5 prose-code:px-2 prose-sm prose-code:bg-slate-100 prose-code:border prose-code:border-slate-300 prose-code:before:content-none prose-code:after:content-none dark:prose-code:bg-slate-600 dark:prose-code:border-slate-500 -->
+  <!-- rounded prose-code:font-light prose-code:py-0.5 prose-code:px-2 prose-sm prose-code:bg-slate-100 prose-code:border prose-code:border-slate-300 prose-code:before:content-none prose-code:after:content-none dark:prose-code:bg-slate-600 dark:prose-code:border-slate-500 -->
 
-  <article class="">
+  <article class="blog">
     <ContentDoc />
   </article>
 </template>
 
-<style scoped></style>
+<style scoped>
+.blog :deep h1,
+.blog :deep h2,
+.blog :deep h3,
+.blog :deep h4,
+.blog :deep h5 {
+  @apply font-bold;
+  @apply mt-8 mb-2;
+}
+
+.blog :deep h1 {
+  @apply text-4xl;
+}
+.blog :deep h2 {
+  @apply text-3xl;
+}
+.blog :deep h3 {
+  @apply text-2xl;
+}
+.blog :deep h4 {
+  @apply text-xl;
+}
+.blog :deep h5 {
+  @apply text-lg;
+}
+
+.blog :deep p {
+  @apply mb-3 mt-4;
+}
+
+.blog :deep p a {
+  @apply text-blue-500 underline;
+}
+
+.blog :deep a .inline-code {
+  @apply text-blue-500;
+}
+
+.blog :deep pre.shiki {
+}
+</style>

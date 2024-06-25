@@ -10,12 +10,6 @@ module.exports = {
     "./app.vue"
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: "#545567",
-        secondary: "#a78bfa"
-      }
-    },
     fontFamily: {
       sans: ["Tajawal", "sans-serif"]
     }

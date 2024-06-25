@@ -9,11 +9,24 @@ Learn how to use @nuxt/content.
 
 <!--more-->
 
-# Full amount of content beyond the more divider.
+# Full amount h1
 
-### Full amount of content beyond the more divider.
+## Full amount h2
 
-Learn now this `code` works
+### Full amount h3
 
-- as
-- asas
+#### Full amount h4
+
+##### Full amount h5
+
+this is `code` of
+
+[Link](/components/prose)
+
+[Link `with code` ](/components/prose)
+
+```js [file.js]
+console.log("snippet");
+```
+
+this is a paragraph
