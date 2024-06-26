@@ -9,7 +9,7 @@ Last year, we upgraded our Nuxt2 app to Nuxt3, which was challenging but worthwh
 
 ::CompositeTitle
 #left
-Our Current First Approach:
+First Approach:
 
 #right
 Using $fetch to fetch data and storing it in Pinia Stores
@@ -18,14 +18,12 @@ Using $fetch to fetch data and storing it in Pinia Stores
 The current way that we're using to handle API requests in our Nuxt3 app is having a wrapper Nuxt plugin called `$API` that internally uses the Nuxt [$fetch](https://nuxt.com/docs/api/utils/dollarfetch) for making requests, something like this:
 
 ```js [stores/data.ts]
-    async fetchData() {
-      const { $API } = useNuxtApp();
-      return await $API
-        .get("/content/data")
-        .then(async (response) => {
-          this.myData = response.data; // myData is a state property
-        });
-    }
+async function fetchData() {
+  const { $API } = useNuxtApp();
+  return await $API.get("/content/data").then(async response => {
+    this.myData = response.data; // myData is a state property
+  });
+}
 ```
 
 In vue page, we have:
@@ -75,10 +73,62 @@ All we need to do is wrap our function call with the `callOnce`, as below:
 Now hit a reload, and watch your network tab, you will no longer see that request. 🔥🔥
 
 This solution fits us, as need something quick and works in the same time, in the meantime, we will be transitiong gradually to other solutions like the below ones.
+<br><br>
+::CompositeTitle
+#left
+Second Approach:
 
-### Solution (2): use `useFetch`
+#right
+Using `useFetch` to fetch data and storing it in Vue component
+::
 
-Not our all APIs requests' response are stored in Pinia stores, some of
+<!-- prettier-ignore -->
+```js [stores/data.ts]
+    async function fetchData() {
+         const { $API } = useNuxtApp();
+         return await $API.get("/content/data");
+    }
+
+````
+
+Getting the data and storing it in the component:
+
+<!-- prettier-ignore -->
+```vue [home.vue]
+    <template>{{ myData }}</template>
+
+    <script setup lang="ts">
+        const myData = ref();
+        const { fetchData } = useContentStore();
+        const res = await fetchData();
+        myData.value = res.data;
+    </script>
+````
+
+### The problem
+
+Not all APIs results are stored in Pinia stores, if that was the case, we can just use the above approach. The issue we faced that we have Pinia actions that make APIs requests using `$fetch` and return the API result to the Vue component and it stored in it, like the above example.
+
+The issue here is that the `$fetch` executes twice, once on server and once on client. I tried to wrap with `callOnce` like this:
+
+<!-- prettier-ignore -->
+```vue [home.vue]
+    <template>{{ myData }}</template>
+    <script setup lang="ts">
+        const myData = ref();
+        const { fetchData } = useContentStore();
+        await callOnce(()=> {
+            const res = await fetchData();
+            myData.value = res.data;
+        })
+    </script>
+````
+
+Yes, the above block of code will get executed once, but the data `myData` will be lost from the component when Nuxt hydrates the component.
+
+### Solution:
+
+We can use `useFetch` to handle such a case.
 
 The `useFetch` is a great comosable for handeling APIs easily, you can review it [here](https://nuxt.com/docs/api/composables/use-fetch) or on [Youtube By Alexander Lichter](https://www.youtube.com/watch?v=njsGVmcWviY&t=2s)
 
@@ -87,8 +137,6 @@ In our real app we created a wrapper called `useBaseFetch` so we do it in common
 ::
 
 `useFetch` is not meant to be used in pinia stores, mainly it should be called in inside `<script setup></script>` where it can automaticlly stores the API response data into your Vue component, and it makes sure the component's data is transferred from server to client.
-
-This means, if we're going to use the `useFetch` we won't use our Pinia action `fetchData` to do the API. Instead we will use the `useFetch` directly in our `home.vue` page, then use the result directly.
 
 <!-- prettier-ignore -->
 ```vue [pages/home.vue]
