@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-100 rounded-lg border border-blue-300 p-4">
+  <div class="text-black bg-blue-200 rounded-lg border border-blue-300 p-4">
     <Icon
       name="mdi:information-slab-circle-outline"
       class="w-5 mr-1 text-lg shrink-0"
