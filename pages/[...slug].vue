@@ -17,19 +17,19 @@
 }
 
 .blog :deep h1 {
-  @apply text-4xl;
+  @apply xl:text-4xl text-2xl;
 }
 .blog :deep h2 {
-  @apply text-3xl;
+  @apply xl:text-3xl text-xl;
 }
 .blog :deep h3 {
-  @apply text-2xl;
+  @apply xl:text-2xl text-lg;
 }
 .blog :deep h4 {
-  @apply text-xl;
+  @apply xl:text-xl text-base;
 }
 .blog :deep h5 {
-  @apply text-lg;
+  @apply xl:text-lg text-sm;
 }
 
 .blog :deep p {

@@ -30,14 +30,13 @@ async function fetchData() {
 
 In vue page, we have:
 
-<!-- prettier-ignore -->
 ```vue [pages/home.vue]
-    <template> {{ myData}}</template>
+<template>{{ myData }}</template>
 
-    <script setup lang="ts">
-        const { fetchData, myData } = useContentStore();
-        await fetchData();
-    </script>
+<script setup lang="ts">
+const { fetchData, myData } = useContentStore();
+await fetchData();
+</script>
 ```
 
 ### The problem
@@ -59,17 +58,16 @@ Okay, this should be expected to have 2 requests, if you use the `$fetch` to sto
 
 All we need to do is wrap our function call with the `callOnce`, as below:
 
-<!-- prettier-ignore -->
 ```vue [pages/home.vue]
-    <!-- myData is a state propert in our content store -->
-    <template> {{ myData}}</template>
+<!-- myData is a state propert in our content store -->
+<template>{{ myData }}</template>
 
-    <script setup lang="ts">
-        const { fetchData, myData } = useContentStore();
-         await callOnce(async () => {
-            await fetchData();
-         });
-    </script>
+<script setup lang="ts">
+const { fetchData, myData } = useContentStore();
+await callOnce(async () => {
+  await fetchData();
+});
+</script>
 ```
 
 Now hit a reload, and watch your network tab, you will no longer see that request. 🔥🔥
@@ -84,28 +82,25 @@ Second Approach:
 Using `useFetch` to fetch data and storing it in Vue component
 ::
 
-<!-- prettier-ignore -->
 ```js [stores/data.ts]
-    async function fetchData() {
-         const { $API } = useNuxtApp();
-         return await $API.get("/content/data");
-    }
-
-````
+async function fetchData() {
+  const { $API } = useNuxtApp();
+  return await $API.get("/content/data");
+}
+```
 
 Getting the data and storing it in the component:
 
-<!-- prettier-ignore -->
 ```vue [home.vue]
-    <template>{{ myData }}</template>
+<template>{{ myData }}</template>
 
-    <script setup lang="ts">
-        const myData = ref();
-        const { fetchData } = useContentStore();
-        const res = await fetchData();
-        myData.value = res.data;
-    </script>
-````
+<script setup lang="ts">
+const myData = ref();
+const { fetchData } = useContentStore();
+const res = await fetchData();
+myData.value = res.data;
+</script>
+```
 
 ### The problem
 
@@ -113,18 +108,17 @@ Not all APIs results are stored in Pinia stores, if that was the case, we can ju
 
 The issue here is that the `$fetch` executes twice, once on server and once on client. I tried to wrap with `callOnce` like this:
 
-<!-- prettier-ignore -->
 ```vue [home.vue]
-    <template>{{ myData }}</template>
-    <script setup lang="ts">
-        const myData = ref();
-        const { fetchData } = useContentStore();
-        await callOnce(()=> {
-            const res = await fetchData();
-            myData.value = res.data;
-        })
-    </script>
-````
+<template>{{ myData }}</template>
+<script setup lang="ts">
+const myData = ref();
+const { fetchData } = useContentStore();
+await callOnce(() => {
+  const res = await fetchData();
+  myData.value = res.data;
+});
+</script>
+```
 
 Yes, the above block of code will get executed once, but the data `myData` will be lost from the component when Nuxt hydrates the component.
 
@@ -140,13 +134,12 @@ In our real app we created a wrapper called `useBaseFetch` so we do it in common
 
 `useFetch` is not meant to be used in pinia stores, mainly it should be called in inside `<script setup></script>` where it can automaticlly stores the API response data into your Vue component, and it makes sure the component's data is transferred from server to client.
 
-<!-- prettier-ignore -->
 ```vue [pages/home.vue]
-    <template>{{ myData }}</template>
+<template>{{ myData }}</template>
 
-    <script setup>
-       const { data: myData } = await useFetch("/content/data");
-    </script>
+<script setup>
+const { data: myData } = await useFetch("/content/data");
+</script>
 ```
 
 Now check your network tab, you won't see the client API request.
