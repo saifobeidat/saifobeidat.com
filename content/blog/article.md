@@ -5,6 +5,8 @@ description: ""
 
 # Nuxt3: How we eliminated extra 10 API requests when using $fetch and Pinia
 
+![nuxt-avoid-client-requests](/blog/nuxt-avoid-client-requests.jpg)
+
 Last year, we upgraded our Nuxt2 app to Nuxt3, which was challenging but worthwhile. Unfortunately, we couldn't fully utilize all the new Nuxt3 features like `useFetch` because migrating from Axios/Vuex to useFetch/Pinia was time-consuming given our large app. Instead, we went a simpler approach by using $fetch/Pinia, only changing our API plugin wrapper from Axios to $fetch did the job quickly and safelly.
 
 ::CompositeTitle
