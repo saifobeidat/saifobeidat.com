@@ -1,9 +1,15 @@
 ---
 title: "Nuxt3: How we eliminated extra 10 API requests on a single page using $fetch and Pinia"
-description: ""
+description: "Discover how we reduced 10 extra API requests in our Nuxt3 app by using $fetch and Pinia. Learn our approach and solutions"
+
+image:
+  src: "/blog/nuxt-avoid-client-requests.jpg"
+  alt: "nuxt-avoid-client-requests"
+  width: 400
+  height: 300
 ---
 
-# Nuxt3: How we eliminated extra 10 API requests when using $fetch and Pinia
+# Nuxt3: How We Eliminated 10 Extra API Requests Using $fetch and Pinia
 
 ![nuxt-avoid-client-requests](/blog/nuxt-avoid-client-requests.jpg)
 
@@ -41,7 +47,7 @@ await fetchData();
 
 ### The problem
 
-The `$fetch` causes to have 2 requests, one on the server and one on client, this is actully by design, as `$fetch` doesn't transfer the data from server to client, so it needs to do the two requests to make sure that your Vue compoentn's data is retrieved again.
+Using $fetch causes two requests: one on the server and one on the client. This is by design, as $fetch doesn't transfer data from the server to the client, so it needs to make two requests to ensure the Vue component's data is retrieved again.
 
 ::Quot
 [Ref:](https://nuxt.com/docs/api/utils/dollarfetch)
@@ -54,9 +60,9 @@ Okay, this should be expected to have 2 requests, if you use the `$fetch` to sto
 
 ### The Solution
 
-`callOnce` was espically designed to solve such a problem, it's purpose to avoid the extra function executio and it executes once on server, and on client side navigation. [Ref](https://github.com/nuxt/nuxt/pull/24787)
+`callOnce` was especially designed to solve such a problem, it's purpose to avoid the extra function executio and it executes once on server, and on client side navigation. [Ref](https://github.com/nuxt/nuxt/pull/24787)
 
-All we need to do is wrap our function call with the `callOnce`, as below:
+We need to wrap our function call with `callOnce`:
 
 ```vue [pages/home.vue]
 <!-- myData is a state propert in our content store -->
@@ -79,7 +85,7 @@ This solution fits us, as need something quick and works in the same time, in th
 Second Approach:
 
 #right
-Using `useFetch` to fetch data and storing it in Vue component
+Using `useFetch` to fetch data and storing it in a Vue component
 ::
 
 ```js [stores/data.ts]
@@ -104,7 +110,7 @@ myData.value = res.data;
 
 ### The problem
 
-Not all APIs results are stored in Pinia stores, if that was the case, we can just use the above approach. The issue we faced that we have Pinia actions that make APIs requests using `$fetch` and return the API result to the Vue component and it stored in it, like the above example.
+Not all APIs results are stored in Pinia stores, if that was the case, we could just use the above approach. The issue we faced that we have Pinia actions that make APIs requests using `$fetch` and return the API result to the Vue component and it stored in it, like the above example.
 
 The issue here is that the `$fetch` executes twice, once on server and once on client. I tried to wrap with `callOnce` like this:
 
@@ -143,3 +149,5 @@ const { data: myData } = await useFetch("/content/data");
 ```
 
 Now check your network tab, you won't see the client API request.
+
+<br>
