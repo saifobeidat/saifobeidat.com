@@ -109,7 +109,7 @@ myData.value = res.data;
 
 ### The problem
 
-We don't store all the APIs results in Pinia stores, sometimes we store them in the same Vue component's instance. We used `$fetch` .. and got executed twice (as expected).. we tried to wrap it with `callOnce` like below:
+We don't store all the APIs results in Pinia stores, sometimes we store them in the same Vue component's instance. We used our plugin `$API` that uses `$fetch` internally and as expected it got executed twice .. we tried to wrap it with `callOnce` like below:
 
 ```vue [home.vue]
 <template>{{ myData }}</template>
