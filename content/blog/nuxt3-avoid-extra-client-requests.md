@@ -14,6 +14,10 @@ image:
 
 [Tuesday, July 4, 2024]
 
+<br>
+
+_The below image shows how we optimized the initial load, decreasing the number of client requests from 11 to only one_
+
 ![nuxt-avoid-client-requests](/blog/nuxt-avoid-client-requests.jpg)
 
 Last year, we upgraded our Nuxt2 app to Nuxt3, which was challenging but worthwhile. Unfortunately, we couldn't fully utilize all the new Nuxt3 features like `useFetch` because migrating our app from "Axios/Vuex" to "useFetch" or different approaches was time-consuming given our large app.
@@ -156,6 +160,6 @@ _Note: the above methods are just the ways how we eliminated extra client reques
 ## Main Benefits of the above enhancments
 
 1. Saving network requests means having better performance
-2. Eliminating extra expensive SQL queries that were caused by the extra client APIs requests
+2. Eliminating expensive SQL queries that were caused by the extra client APIs requests
 
 <br>
