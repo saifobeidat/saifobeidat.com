@@ -109,9 +109,7 @@ myData.value = res.data;
 
 ### The problem
 
-Not all APIs results are stored in Pinia stores, if that was the case, we could just use the `callOnce`. The issue we faced that we have Pinia actions that make APIs requests using `$fetch` and return the API result to a Vue component and it gets stored in it, like the above example.
-
-The issue here is that the `$fetch` executes twice, once on server and once on client. I tried to wrap with `callOnce` like this:
+We don't store all the APIs results in Pinia stores, sometimes we store them in the same Vue component's instance. We used `$fetch` .. and got executed twice (as expected).. we tried to wrap it with `callOnce` like below:
 
 ```vue [home.vue]
 <template>{{ myData }}</template>
