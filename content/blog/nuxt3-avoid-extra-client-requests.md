@@ -149,4 +149,6 @@ const { data: myData } = await useFetch("/content/data");
 
 Now check your network tab, you won't see the client API request on reload.
 
+_Note: the above methods are just the ways how we eliminated extra client requests when we were using $fetch and Pinia, its not about recommending an approach over other approaches for fetching data._
+
 <br>
