@@ -21,7 +21,7 @@
       class="flex items-center sm:w-1/2 sm:border-l sm:pl-4 border-slate-200 dark:border-slate-500"
     >
       <div>
-        <div v-for="(infoItem, $index) in info" :key="$index">
+        <div v-if="false" v-for="(infoItem, $index) in info" :key="$index">
           <label class="text-[15px] pr-1"> {{ infoItem.label }}: </label>
           <span class="font-light text-sm text-slate-700 dark:text-slate-300">
             {{ infoItem.value }}

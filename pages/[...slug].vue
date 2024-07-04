@@ -33,7 +33,7 @@
 }
 
 .blog :deep p {
-  @apply mb-3 mt-4;
+  @apply mb-3 mt-4 text-[17px];
 }
 
 .blog :deep p a {
