@@ -16,7 +16,7 @@ image:
 
 <br>
 
-_The below image shows how we optimized the initial load, decreasing the number of client requests from 11 to only one_
+_The below image shows how decreased the number of client requests from 11 to only one_
 
 ![nuxt-avoid-client-requests](/blog/nuxt-avoid-client-requests.jpg)
 
