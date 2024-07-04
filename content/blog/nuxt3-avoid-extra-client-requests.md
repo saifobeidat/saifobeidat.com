@@ -1,5 +1,6 @@
 ---
-title: "Nuxt3: How we eliminated extra 10 Client API requests on a single page using $fetch and Pinia"
+title: "Nuxt3: How We Eliminated 10 Extra Client API Requests Using $fetch and Pinia"
+
 description: "Discover how we reduced 10 extra API requests in our Nuxt3 app by using $fetch and Pinia. Learn our approach and solutions"
 date: Tuesday, July 4, 2024
 
