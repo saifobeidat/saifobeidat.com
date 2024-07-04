@@ -7,7 +7,7 @@
         {{ filename }}
       </div>
     </div>
-    <pre :class="$props.class" class="pre-snippet pl-5">
+    <pre :class="$props.class" class="pre-snippet pl-5 mr-3 overflow-x-auto">
         <slot></slot>
     </pre>
   </div>
