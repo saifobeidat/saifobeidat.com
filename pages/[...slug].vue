@@ -46,4 +46,9 @@
 
 .blog :deep pre.shiki {
 }
+
+.blog :deep ol {
+  list-style: decimal;
+  margin-left: 15px;
+}
 </style>

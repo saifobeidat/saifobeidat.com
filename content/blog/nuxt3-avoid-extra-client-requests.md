@@ -1,7 +1,7 @@
 ---
 title: "Nuxt3: How we eliminated extra 10 API requests on a single page using $fetch and Pinia"
 description: "Discover how we reduced 10 extra API requests in our Nuxt3 app by using $fetch and Pinia. Learn our approach and solutions"
-date: Tuesday, July 2, 2024
+date: Tuesday, July 4, 2024
 
 image:
   src: "/blog/nuxt-avoid-client-requests.jpg"
@@ -11,6 +11,8 @@ image:
 ---
 
 # Nuxt3: How We Eliminated 10 Extra API Requests Using $fetch and Pinia
+
+[Tuesday, July 4, 2024]
 
 ![nuxt-avoid-client-requests](/blog/nuxt-avoid-client-requests.jpg)
 
@@ -150,5 +152,10 @@ const { data: myData } = await useFetch("/content/data");
 Now check your network tab, you won't see the client API request on reload.
 
 _Note: the above methods are just the ways how we eliminated extra client requests when we were using $fetch and Pinia, its not about recommending an approach over other approaches for fetching data._
+
+## Main Benefits of the above enhancments
+
+1. Saving network requests means having better performance
+2. Eliminating extra expensive SQL queries that were caused by the extra client APIs requests
 
 <br>
