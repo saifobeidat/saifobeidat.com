@@ -21,7 +21,7 @@ Instead, we went with a simpler approach by using "$fetch/Pinia" something simil
 <br>
 <hr>
 
-# [Our Fethcing Data Scenarios]{.text-center .w-full .block .underline}
+# [Our Fethcing Data Scenarios (for initial load requests)]{.text-center .w-full .block .underline}
 
 # 1) Using "$fetch" to fetch data and storing it in Pinia Stores
 
@@ -56,7 +56,7 @@ Using `$fetch` causes two requests: one on the server and one on the client. Thi
 Because $fetch does not transfer state from the server to the client. Thus, the fetch will be executed on both sides because the client has to get the data again.
 ::
 
-This means if you hit reload on the home page, you will see a newtork request in the devtools for the `/content/data` API which is extra, as the same exact one happened on the server.
+This means if you hit reload on the home page, you will see a network request in the devtools for the `/content/data` API which is extra, as the same exact one happened on the server.
 
 This is expected to have two requests when you use `$fetch` and store data in your Vue component, but it's an issue if you use `$fetch` to store data in a Pinia store? because Pinia state already preserved and transferred from the server to the client (state got hydrated), so that network request is considered an extra one.
 
