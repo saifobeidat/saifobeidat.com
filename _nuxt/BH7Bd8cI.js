@@ -1,0 +1,1 @@
+import{r}from"./ZLrRWPrm.js";import{_ as o}from"./DlAUqK2U.js";import{o as t,c as s}from"./DHTJGJDg.js";import"./Dnd51l0P.js";const c={},n={class:"text-black bg-blue-200 rounded-lg border border-blue-300 p-4"};function a(e,l){return t(),s("div",n,[r(e.$slots,"default",{unwrap:"p"})])}const m=o(c,[["render",a]]);export{m as default};

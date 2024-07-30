@@ -1,0 +1,1 @@
+import{_ as t}from"./DlAUqK2U.js";import{o,c as r,g as s}from"./DHTJGJDg.js";const a={},c={class:"border-l-2 italic text-slate-600 dark:text-slate-100 border-slate-300 pl-4 py-1 rounded-lg"};function l(e,n){return o(),r("div",c,[s(e.$slots,"default")])}const f=t(a,[["render",l]]);export{f as default};
